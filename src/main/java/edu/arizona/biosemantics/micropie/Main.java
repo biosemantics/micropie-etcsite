@@ -64,7 +64,7 @@ public class Main {
 		//args = "-i F:\\MicroPIE\\datasets\\craft -o F:\\MicroPIE\\ext\\2017new -m F:/MicroPIE/micropie0.2_model  -vi true -f mc".split("\\s+");
 		
 		//Part_One_111_final  GSM V1
-		args = "-i C:\\Users\\hongcui\\Downloads\\MicroPIEtest10 -m C:\\Users\\hongcui\\git\\micropie2\\models -o C:\\Users\\hongcui\\Downloads\\MicroPIEtest10OUT -vi false".split("\\s+");
+		args = "-i C:\\Users\\hongcui\\Downloads\\MicroPIEtest10 -m C:\\Users\\hongcui\\git\\micropie-etcsite\\models -o C:\\Users\\hongcui\\Downloads\\MicroPIEtest10OUT -vi false".split("\\s+");
 		//System.out.println(args);
 		main.parse(args);
 		//main.run();

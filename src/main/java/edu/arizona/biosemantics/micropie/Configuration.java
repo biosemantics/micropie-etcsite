@@ -36,9 +36,9 @@ public class Configuration {
 		ClassLoader loader = Thread.currentThread().getContextClassLoader();
 		Properties properties = new Properties();
 		try {
-			
+			System.out.println("1");
 			properties.load(loader.getResourceAsStream("edu/arizona/biosemantics/micropie/config.properties"));
-			
+			System.out.println("2");
 			characterListString = properties.getProperty("characterListString");
 			ouputCharacterListString = properties.getProperty("ouputCharacterListString");
 			svmLabelAndCategoryMappingFile = properties.getProperty("svmLabelAndCategoryMappingFile");
@@ -55,6 +55,7 @@ public class Configuration {
 			geoUniqTermFile = properties.getProperty("geoUniqTermFile");
 			geoTaggerModel = properties.getProperty("geoTaggerModel");
 		} catch (IOException e) {
+			e.printStackTrace();
 			logger.error("Couldn't read configuration", e);
 		}
 	}
